@@ -18,16 +18,18 @@ This project implements a **Retrieval-Augmented Generation (RAG)** pipeline usin
    cd rag-demo
 
 2. **Install dependencies:**
-    pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
 
-3. **Environment variables (.env):**
+4. **Environment variables (.env):**
    A .env file is already included in this repository with the required keys.
   ⚠️ Make sure this .env file is placed in the root project folder (same directory as index_documents.py).
 
-4. **Environment variables (.env):**
+5. **Environment variables (.env):**
    Download NLTK tokenizer (first run only):
    The first run will automatically trigger the download of punkt.
    You can also download it manually in Python:
+   ```bash
    import nltk
    nltk.download("punkt")
 
@@ -39,13 +41,15 @@ This project implements a **Retrieval-Augmented Generation (RAG)** pipeline usin
 Run the script and provide PDF/DOCX files one by one.
 When you are done, type done (case-insensitive) to switch to Q&A mode.
 
-Example:
+**Example:**
+```bash
 Enter file path (PDF/DOCX) or 'done' to finish: data/Google_PromptEngineering.pdf
 ✅ Indexed 125 chunks from Google_PromptEngineering.pdf
 Enter file path (PDF/DOCX) or 'done' to finish: done
 
 **Step 2 – Ask questions:**
 Once documents are indexed, you can query them interactively:
+```bash
 Enter your question (or type 'exit' to quit): What are the core principles of prompt engineering?
 
 Answer:
@@ -60,6 +64,7 @@ Sources:
 Type exit to quit.
 
 ## Example Session
+```bash
 Enter file path (PDF/DOCX) or 'done' to finish: data/Google_PromptEngineering.pdf
 ✅ Indexed 125 chunks from Google_PromptEngineering.pdf
 
@@ -74,6 +79,7 @@ Enter your question (or type 'exit' to quit): exit
 
 ## Requirements
 All dependencies are in **requirements.txt:**
+```bash
 python-docx
 pdfplumber
 nltk
