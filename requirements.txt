@@ -1,0 +1,17 @@
+# Core
+python-dotenv
+supabase
+pgvector
+
+# Google Gemini
+google-generativeai
+
+# NLP & Tokenization
+nltk
+
+# Document parsing
+pdfplumber
+python-docx
+
+# Utils
+tqdm
