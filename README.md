@@ -27,7 +27,7 @@ This project implements a **Retrieval-Augmented Generation (RAG)** pipeline usin
    A .env file is already included in this repository with the required keys.
   ⚠️ Make sure this .env file is placed in the root project folder (same directory as index_documents.py).
 
-5. **Environment variables (.env):**
+5. **Download NLTK tokenizer (first run only):**
    Download NLTK tokenizer (first run only):
    The first run will automatically trigger the download of punkt.
    You can also download it manually in Python:
