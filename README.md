@@ -16,10 +16,12 @@ This project implements a **Retrieval-Augmented Generation (RAG)** pipeline usin
    ```bash
    git clone https://github.com/your-username/rag-demo.git
    cd rag-demo
+   ```
 
 2. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
+   ```
 
 4. **Environment variables (.env):**
    A .env file is already included in this repository with the required keys.
@@ -32,7 +34,8 @@ This project implements a **Retrieval-Augmented Generation (RAG)** pipeline usin
    ```bash
    import nltk
    nltk.download("punkt")
-
+   ```
+   
    After the first download, you can comment out this line in the code if desired (optional).
 
 ## Usage
@@ -46,6 +49,7 @@ When you are done, type done (case-insensitive) to switch to Q&A mode.
 Enter file path (PDF/DOCX) or 'done' to finish: data/Google_PromptEngineering.pdf
 ✅ Indexed 125 chunks from Google_PromptEngineering.pdf
 Enter file path (PDF/DOCX) or 'done' to finish: done
+```
 
 **Step 2 – Ask questions:**
 Once documents are indexed, you can query them interactively:
@@ -62,7 +66,7 @@ Sources:
 - Google_PromptEngineering.pdf (score: 0.857)
 
 Type exit to quit.
-
+```
 ## Example Session
 ```bash
 Enter file path (PDF/DOCX) or 'done' to finish: data/Google_PromptEngineering.pdf
@@ -76,7 +80,7 @@ Sources:
 - Google_PromptEngineering.pdf (score: 0.912)
 
 Enter your question (or type 'exit' to quit): exit
-
+```
 ## Requirements
 All dependencies are in **requirements.txt:**
 ```bash
@@ -86,3 +90,4 @@ nltk
 google-generativeai
 python-dotenv
 supabase
+```
