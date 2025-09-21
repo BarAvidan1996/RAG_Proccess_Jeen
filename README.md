@@ -65,7 +65,9 @@ Before running the project, you must set up your own Supabase project:
    ```
 
    Copy your project’s SUPABASE_URL and service_role_key (from Project Settings → API).
+   
    Insert these values into your .env file.
+   
    
 4. **Environment variables (.env):**
    A `.env` file is already included in this repository with placeholder values.  
